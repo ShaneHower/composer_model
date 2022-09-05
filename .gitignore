@@ -1,0 +1,11 @@
+# Ignore folders
+__pycache__/
+.venv/
+.aws/
+.idea/
+
+# Ignore all logs 
+*.log
+*.csv
+*.mp3
+*.wav

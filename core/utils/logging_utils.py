@@ -3,9 +3,16 @@ import logging.config
 
 
 def initialize_logger(log_path=None):
+    """
+        Configures the Python logger.
+
+        Args:
+            log_path (Path or str):
+                Log file path. If omitted, no log file will be generated.
+    """
     config = {
         'version': 1,
-        'disable_existing_loggers': False, 
+        'disable_existing_loggers': False,
         'formatters': {
             'standard': {
                 'class': 'logging.Formatter',
